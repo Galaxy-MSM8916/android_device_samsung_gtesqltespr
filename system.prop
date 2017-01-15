@@ -1,9 +1,3 @@
-#
-# from device/samsung/gtelwifiue/system.prop
-#
-#
-# system.prop for msm8916
-#
 # KSM and ZRAM
 ro.config.ksm=false
 ro.config.zram=false
