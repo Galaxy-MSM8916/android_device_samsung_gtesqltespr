@@ -1,16 +1,16 @@
 # Inherit from common
 include device/samsung/gtel-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gtelwifiue
+LOCAL_PATH := device/samsung/gtesspr
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := gtelwifiue,samsung_sm_t560nu,t560nu
+TARGET_OTA_ASSERT_DEVICE := gtesspr,samsung_sm_t377p,t377p
 
 # Init
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_gtelwifiue.cpp
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_gtesspr.cpp
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gtelwifi_usa_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gtes_spr_defconfig
 
 # Partition sizes
 BOARD_SYSTEMIMAGE_PARTITION_SIZE    := 2516582400

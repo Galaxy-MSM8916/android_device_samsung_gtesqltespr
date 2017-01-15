@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/gtelwifiue
+LOCAL_PATH := device/samsung/gtesspr
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cm.mk
-#    $(LOCAL_DIR)/omni_gtelwifiue.mk
+#    $(LOCAL_DIR)/omni_gtesspr.mk

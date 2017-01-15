@@ -1,13 +1,13 @@
 #Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/gtelwifiue/gtelwifiue-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gtesspr/gtesspr-vendor.mk)
 
 # Inherit from common
 $(call inherit-product, device/samsung/gtel-common/device-common.mk)
 
-LOCAL_PATH := device/samsung/gtelwifiue
+LOCAL_PATH := device/samsung/gtesspr
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/gtelwifiue/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gtesspr/overlay
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/dt.img:dt.img
@@ -53,6 +53,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.product.model=SM-T560NU \
-	ro.product.device=gtelwifiue
+	ro.product.model=SM-T377P \
+	ro.product.device=gtesspr
 
