@@ -48,8 +48,14 @@ PRODUCT_COPY_FILES += \
 
 # Disable RIL
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	ro.carrier=wifi-only \
-	ro.radio.noril=1
+	rild.libpath=/system/lib/libsec-ril.so \
+	persist.radio.lte_vrte_ltd=1 \
+	persist.radio.add_power_save=1 \
+	persist.data.netmgrd.qos.enable=false \
+	persist.radio.snapshot_enabled=1 \
+	persist.radio.snapshot_timer=22 \
+	persist.eons.enabled=true \
+	telephony.lteOnCdmaDevice=1
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
