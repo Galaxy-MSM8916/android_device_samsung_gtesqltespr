@@ -1,9 +1,28 @@
+#
+# from device/samsung/gtesqltespr/system.prop
+#
+#
+# system.prop for msm8916
+#
+
+# Evolution RIL (8xxx)
 # KSM and ZRAM
 ro.config.ksm=false
 ro.config.zram=false
 
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
 DEVICE_PROVISIONED=1
-ro.chipname=APQ8016
+
 debug.sf.hw=1
 debug.egl.hw=1
 debug.composition.type=c2d
@@ -20,12 +39,6 @@ persist.demo.hdmirotationlock=false
 #lpa.use-stagefright=true
 #persist.speaker.prot.enable=false
 
-#
-# system props for the cne module
-#
-persist.cne.feature=0
-persist.cne.dpm=0
-persist.dpm.feature=0
 
 #system props for the MM modules
 media.stagefright.enable-player=true
@@ -97,34 +110,40 @@ voice.record.conc.disabled=true
 voice.voip.conc.disabled=true
 
 # set lcd density
-ro.sf.lcd_density=160
-
-# carrier
-ro.carrier=wifi-only
+ro.sf.lcd_density=213
 
 #property to enable user to access Google WFD settings
 persist.debug.wfd.enable=1
 #propery to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
-#
-# ADDITIONAL_BUILD_PROPERTIES
-#
-ro.astcenc.astcsupport=1
-ro.mct.compressiontype=ETC1
-ro.radio.noril=yes
+ro.telephony.default_cdma_sub=0
+
+# SAMP_SPCM
+sys.config.samp_spcm_enable=true
+sys.config.spcm_db_enable=true
+sys.config.spcm_db_launcher=true
+sys.config.spcm_preload_enable=true
+
+ro.use_data_netmgrd=false
+ro.ril.ecclist=911,#911,*911
+ril.subscription.types=NV,RUIM
+ro.com.android.dataroaming=true
+ro.telephony.default_network=8
 keyguard.no_require_sim=true
 ro.carrier=unknown
+ro.security.icd.flagmode=single
+security.ASKS.policy_version=000000
 ro.vendor.extension_library=libqti-perfd-client.so
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.sib16_support=1
 security.mdpp.mass=skmm
-ro.security.vpnpp.ver=1.4
-ro.security.vpnpp.release=7.0
-ro.sec.fle.encryption=true
 ro.frp.pst=/dev/block/persistent
-dalvik.vm.isa.arm.variant=cortex-a53
+ro.im.param.offset=9437212
+ro.me.param.offset=9437292
+ro.sn.param.offset=9437372
+ro.pr.param.offset=9437452
+ro.sku.param.offset=9437532
 persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
-ro.gps.agps_provider=1
 
