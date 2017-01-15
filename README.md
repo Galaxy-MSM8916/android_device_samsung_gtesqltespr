@@ -1,6 +1,6 @@
-# android_device_samsung_gtelwifiue
+# android_device_samsung_gtesqltespr
 
-## Device tree for Samsung Galaxy Tab (E) SM-T560NU [gtelwifiue]
+## Device tree for Samsung Galaxy Tab (E) SM-T377P [gtesqltespr]
 
 Basic   | Spec Sheet
 -------:|:-------------------------

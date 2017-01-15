@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from device.mk
-$(call inherit-product, device/samsung/gtesspr/device.mk)
+$(call inherit-product, device/samsung/gtesqltespr/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := gtesspr
-PRODUCT_NAME := full_gtesspr
+PRODUCT_DEVICE := gtesqltespr
+PRODUCT_NAME := full_gtesqltespr
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T377P
 PRODUCT_MANUFACTURER := samsung

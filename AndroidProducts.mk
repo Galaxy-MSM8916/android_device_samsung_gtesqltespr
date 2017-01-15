@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/gtesspr
+LOCAL_PATH := device/samsung/gtesqltespr
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cm.mk
-#    $(LOCAL_DIR)/omni_gtesspr.mk
+#    $(LOCAL_DIR)/omni_gtesqltespr.mk

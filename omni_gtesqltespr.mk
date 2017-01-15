@@ -15,7 +15,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/samsung/gtesspr/full_gtesspr.mk)
+$(call inherit-product, device/samsung/gtesqltespr/full_gtesqltespr.mk)
 
 # Device identifier. This must come after all inclusions
 # Release name
@@ -25,8 +25,8 @@ PRODUCT_RELEASE_NAME := Samsung Galaxy Tab E
 TARGET_SCREEN_WIDTH := 800
 TARGET_SCREEN_HEIGHT := 1280
 
-PRODUCT_DEVICE := gtesspr
-PRODUCT_NAME := omni_gtesspr
+PRODUCT_DEVICE := gtesqltespr
+PRODUCT_NAME := omni_gtesqltespr
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T377P
 PRODUCT_MANUFACTURER := samsung

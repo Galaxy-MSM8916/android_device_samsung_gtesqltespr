@@ -1,13 +1,13 @@
 # Inherit from common
 include device/samsung/gtel-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/gtesspr
+LOCAL_PATH := device/samsung/gtesqltespr
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := gtesspr,samsung_sm_t377p,t377p
+TARGET_OTA_ASSERT_DEVICE := gtesqltespr,samsung_sm_t377p,t377p
 
 # Init
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_gtesspr.cpp
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_gtesqltespr.cpp
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gtes_spr_defconfig

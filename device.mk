@@ -1,13 +1,13 @@
 #Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/gtesspr/gtesspr-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gtesqltespr/gtesqltespr-vendor.mk)
 
 # Inherit from common
 $(call inherit-product, device/samsung/gtel-common/device-common.mk)
 
-LOCAL_PATH := device/samsung/gtesspr
+LOCAL_PATH := device/samsung/gtesqltespr
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/gtesspr/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gtesqltespr/overlay
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/dt.img:dt.img
@@ -54,5 +54,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.product.model=SM-T377P \
-	ro.product.device=gtesspr
+	ro.product.device=gtesqltespr
 
