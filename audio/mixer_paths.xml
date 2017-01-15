@@ -716,13 +716,13 @@
 
     <path name="speaker">
         <path name="spk" />
-        <ctl name="RX3 Digital Volume" value="81" />
+        <ctl name="RX3 Digital Volume" value="85" />
     </path>
 
     <path name="headset">
         <path name="ear" />
-        <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="83" />
+        <ctl name="RX2 Digital Volume" value="83" />
     </path>
 
     <path name="dock">
@@ -734,8 +734,8 @@
 
     <path name="headphones">
         <path name="ear" />
-        <ctl name="RX1 Digital Volume" value="83" />
-        <ctl name="RX2 Digital Volume" value="83" />
+        <ctl name="RX1 Digital Volume" value="82" />
+        <ctl name="RX2 Digital Volume" value="82" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     </path>
 
@@ -743,7 +743,7 @@
         <path name="spk-ear" />
         <ctl name="RX1 Digital Volume" value="56" />
         <ctl name="RX2 Digital Volume" value="56" />
-        <ctl name="RX3 Digital Volume" value="81" />
+        <ctl name="RX3 Digital Volume" value="85" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
 	<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
 	<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
@@ -771,13 +771,13 @@
 
     <path name="fm-speaker">
         <path name="spk" />
-        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX3 Digital Volume" value="77" />
     </path>
 
     <path name="fm-headset">
         <path name="ear" />
-        <ctl name="RX1 Digital Volume" value="78" />
-        <ctl name="RX2 Digital Volume" value="78" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX2 Digital Volume" value="84" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     </path>
 
@@ -787,8 +787,8 @@
     <!-- Recording Scenario  -->
     <path name="rec-main-mic">
         <path name="main-mic" />
-        <ctl name="DEC1 Volume" value="89" />
-        <ctl name="ADC1 Volume" value="3" />
+        <ctl name="DEC1 Volume" value="88" />
+        <ctl name="ADC1 Volume" value="2" />
     </path>
 
     <path name="rec-sub-mic">
@@ -1532,7 +1532,7 @@
 
     <path name="voip-speaker-callforwarding">
         <path name="spk" />
-        <ctl name="RX3 Digital Volume" value="86" />
+        <ctl name="RX3 Digital Volume" value="80" />
     </path>
 
     <path name="voip-headset-callforwarding">
