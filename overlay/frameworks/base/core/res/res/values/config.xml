@@ -214,6 +214,9 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">false</bool>
 
+    <!-- Default interface to monitor data use -->
+    <string name="config_datause_iface">rmnet0</string>
+
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
