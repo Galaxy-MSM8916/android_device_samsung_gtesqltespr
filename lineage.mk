@@ -1,10 +1,15 @@
 
 # Inherit from common
-$(call inherit-product, device/samsung/gtel-common/lineage.mk)
+$(call inherit-product, device/samsung/gte-common/lineage.mk)
 
-$(call inherit-product, device/samsung/gtesqltespr/full_gtesqltespr.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CM stuff.
+# Inherit from device.mk
+$(call inherit-product, device/samsung/gtesqltespr/device.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
 ## Device identifier. This must come after all inclusions
