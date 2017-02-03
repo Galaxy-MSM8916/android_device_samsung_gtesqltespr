@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
 	$(LOCAL_PATH)/configs/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.telephony.samsung.realcall=true
+
 # Media configurations
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
@@ -43,7 +47,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media/media_codecs_sec_secondary.xml:system/etc/media_codecs_sec_secondary.xml \
 	$(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
 
-# Disable RIL
+# Enable RIL
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libsec-ril.so \
 	persist.radio.lte_vrte_ltd=1 \
