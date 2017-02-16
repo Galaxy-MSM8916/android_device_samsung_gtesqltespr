@@ -10,7 +10,7 @@ TARGET_OTA_ASSERT_DEVICE := gtesqltespr,samsung_sm_t377p,t377p
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gtes_spr_defconfig
 
 # RIL
-BOARD_RIL_CLASS    := ../../../device/samsung/gte-common/ril
+BOARD_RIL_CLASS    := ../../../device/samsung/gtesqltespr/ril
 TARGET_RIL_VARIANT := caf
 
 # Partition sizes

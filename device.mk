@@ -40,6 +40,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.radio.snapshot_enabled=1 \
 	persist.radio.snapshot_timer=22 \
 	persist.eons.enabled=true \
+	ro.telephony.ril_class=SamsungQcomRIL
 	telephony.lteOnCdmaDevice=1
 
 # Properties
