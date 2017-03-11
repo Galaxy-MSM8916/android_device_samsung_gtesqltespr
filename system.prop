@@ -6,8 +6,7 @@
 #
 
 # Evolution RIL (8xxx)
-# KSM and ZRAM
-ro.config.ksm=false
+#  ZRAM
 ro.config.zram=false
 
 rild.libpath=/system/lib/libsec-ril.so
@@ -28,7 +27,6 @@ debug.egl.hw=1
 debug.composition.type=c2d
 persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.logs=0
-dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 
@@ -56,7 +54,7 @@ mm.enable.qcom_parser=3183219
 #
 ro.data.large_tcp_window_size=true
 # Default to AwesomePlayer
-media.stagefright.use-awesome=false
+media.stagefright.use-awesome=true
 
 
 #
@@ -130,6 +128,8 @@ ro.ril.ecclist=911,#911,*911
 ril.subscription.types=NV,RUIM
 ro.com.android.dataroaming=true
 ro.telephony.default_network=8
+#ro.cdma.default_numeric=310000
+#ro.cdma.default_alpha=Chameleon
 keyguard.no_require_sim=true
 ro.carrier=unknown
 ro.security.icd.flagmode=single
