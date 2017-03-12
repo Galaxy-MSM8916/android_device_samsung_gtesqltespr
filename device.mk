@@ -2,6 +2,7 @@
 $(call inherit-product-if-exists, vendor/samsung/gtesqltespr/gtesqltespr-vendor.mk)
 
 # Inherit from common
+USE_QCOM_MIXER_PATHS := 0
 $(call inherit-product, device/samsung/gte-common/device-common.mk)
 
 LOCAL_PATH := device/samsung/gtesqltespr
