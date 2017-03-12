@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
 	$(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# RIL Shim
+PRODUCT_PACKAGES += libril_shim
+
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.samsung.realcall=true
