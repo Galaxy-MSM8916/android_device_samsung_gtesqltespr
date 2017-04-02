@@ -7,6 +7,9 @@ $(call inherit-product, device/samsung/gte-common/device-common.mk)
 
 LOCAL_PATH := device/samsung/gtesqltespr
 
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gtesqltespr/overlay
 
@@ -24,29 +27,7 @@ PRODUCT_COPY_FILES += \
 # RIL Shim
 PRODUCT_PACKAGES += libril_shim
 
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.telephony.samsung.realcall=true
-
 # Media configurations
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
 	$(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
-
-# Enable RIL
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	rild.libpath=/system/lib/libsec-ril.so \
-	persist.radio.lte_vrte_ltd=1 \
-	persist.radio.add_power_save=1 \
-	persist.data.netmgrd.qos.enable=false \
-	persist.radio.snapshot_enabled=1 \
-	persist.radio.snapshot_timer=22 \
-	persist.eons.enabled=true \
-	ro.telephony.ril_class=SamsungQcomRIL
-	telephony.lteOnCdmaDevice=1
-
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.product.model=SM-T377P \
-	ro.product.device=gtesqltespr
-
