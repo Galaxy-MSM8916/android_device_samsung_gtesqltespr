@@ -13,16 +13,6 @@ LOCAL_PATH := device/samsung/gtesqltespr
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gtesqltespr/overlay
 
-# Audio configuration
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/audio/acdb/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/General_cal.acdb:system/etc/General_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/Global_cal.acdb:system/etc/Global_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-	$(LOCAL_PATH)/configs/audio/acdb/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
-
 # RIL Shim
 PRODUCT_PACKAGES += libril_shim
 
