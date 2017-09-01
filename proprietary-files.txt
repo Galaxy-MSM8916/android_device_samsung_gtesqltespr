@@ -78,7 +78,7 @@ vendor/lib/libqmi.so
 bin/rild
 lib/libril.so
 lib/librilutils.so
-lib/libsec-ril.so
+lib/libsec-ril.so|8036be04ac7cf72f15dcfd8001cc9daa
 
 # Sensors
 lib/hw/sensors.msm8916.so
