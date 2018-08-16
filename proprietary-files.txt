@@ -82,4 +82,3 @@ lib/libsec-ril.so|8036be04ac7cf72f15dcfd8001cc9daa
 
 # Sensors
 lib/hw/sensors.msm8916.so:lib/hw/sensors.vendor.msm8916.so
-vendor/lib/libcalmodule_gyroscope.so
