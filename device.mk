@@ -1,8 +1,8 @@
-#Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/gtesqltespr/gtesqltespr-vendor.mk)
-
 # Inherit from common
 $(call inherit-product, device/samsung/gte-common/device-common.mk)
+
+#Inherit from vendor
+$(call inherit-product-if-exists, vendor/samsung/gtesqltespr/gtesqltespr-vendor.mk)
 
 LOCAL_PATH := device/samsung/gtesqltespr
 
