@@ -61,10 +61,15 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
 
 # Qualcomm framework
+etc/permissions/qti_permissions.xml
 vendor/lib/libdiag.so
+vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
+vendor/lib/libqcmaputils.so
+vendor/lib/libqdi.so
+vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
@@ -72,7 +77,7 @@ vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libqmi.so
+vendor/lib/libsmemlog.so
 
 # RIL
 bin/rild
