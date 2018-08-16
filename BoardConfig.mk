@@ -3,6 +3,8 @@ include device/samsung/gte-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/samsung/gtesqltespr
 
+TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := gtesqltespr,samsung_sm_t377p,t377p
 
@@ -15,3 +17,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12767424512
 
 # RIL
 BOARD_MODEM_TYPE := xmm7260
+BOARD_PROVIDES_LIBRIL := true
