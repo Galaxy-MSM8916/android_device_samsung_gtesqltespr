@@ -80,9 +80,6 @@ vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
 # RIL
-bin/rild
-lib/libril.so
-lib/librilutils.so
 lib/libprotobuf-cpp-full.so:lib/libprotobuf-cpp-lgcy.so
 lib/libsec-ril.so|90f62a5eca1183a48a27507e64d6e7ed7519cdde
 
