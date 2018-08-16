@@ -62,10 +62,12 @@ vendor/lib/libqomx_jpegenc.so
 
 # Qualcomm framework
 etc/permissions/qti_permissions.xml
+lib/libfloatingfeature.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
+vendor/lib/liblqe.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqdi.so
